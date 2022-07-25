@@ -24,7 +24,9 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
       
+      
+      
     - name: Azure Login
       uses: Azure/login@v1.4.5
       with:
-        creds: ${{ secrets.AZURE_CREDENTIALS }}
+        creds: ${{ Secrets.AZURE_CREDENTIALS }}
