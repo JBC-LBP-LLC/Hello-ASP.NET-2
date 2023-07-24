@@ -19,3 +19,7 @@ jobs:
     - name: Test
       run: dotnet test --no-build --verbosity normal
 
+    - name: Advanced-Security-Enforcer
+      # You may pin to the exact commit or the version.
+      # uses: zkoppert/advanced-security-enforcer@85fccaf2a3854c2f298d2694433bfd772020b298
+      uses: zkoppert/advanced-security-enforcer@v2.0.0
